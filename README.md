@@ -13,3 +13,4 @@ pnpm dev
 # or
 bun dev
 ```
+Live on: https://ecommerce-da2fwmwy1-ianmoraes.vercel.app
