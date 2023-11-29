@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import ProfileDropDown from "./ProfileDropdown";
 import { FaOpencart } from "react-icons/fa6";
 import Link from "next/link";
-export default () => {
+const Header = () => {
   const [menuState, setMenuState] = useState(false);
 
   const navigation = [
@@ -101,3 +101,4 @@ export default () => {
     </nav>
   );
 };
+export default Header

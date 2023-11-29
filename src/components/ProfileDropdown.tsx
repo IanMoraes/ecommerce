@@ -33,9 +33,9 @@ const ProfileDropDown = (props: ProfileDropDownProps) => {
           }`}
         >
           {navigation.map((item, idx) => (
-            <li>
+            <li key={idx}>
               <a
-                key={idx}
+                
                 className="block text-gray-600 lg:hover:bg-gray-50 lg:p-2.5"
                 href={item.path}
               >
