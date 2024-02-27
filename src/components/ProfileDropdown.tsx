@@ -1,3 +1,4 @@
+"use client"
 import { useRef, useState } from "react";
 
 interface ProfileDropDownProps {
@@ -5,13 +6,6 @@ interface ProfileDropDownProps {
   }
 const ProfileDropDown = (props: ProfileDropDownProps) => {
     const [state, setState] = useState(false);
-    const profileRef = useRef();
-  
-    const navigation = [
-      { title: "Dashboard", path: "javascript:void(0)" },
-      { title: "Settings", path: "javascript:void(0)" },
-      { title: "Log out", path: "javascript:void(0)" },
-    ];
   
     return (
       <div className={`relative ${props.className}`}>
@@ -32,17 +26,6 @@ const ProfileDropDown = (props: ProfileDropDownProps) => {
             state ? "" : "lg:hidden"
           }`}
         >
-          {navigation.map((item, idx) => (
-            <li key={idx}>
-              <a
-                
-                className="block text-gray-600 lg:hover:bg-gray-50 lg:p-2.5"
-                href={item.path}
-              >
-                {item.title}
-              </a>
-            </li>
-          ))}
         </ul>
       </div>
     );

@@ -1,6 +1,6 @@
-import { ProductCardProps } from "./components/ProductCard"
+import { IProduct } from "./interfaces/IProduct";
 
-const products:ProductCardProps[] = [
+const products:IProduct[] = [
     {
       "id": 1,
       "price": 49.99,
@@ -8,7 +8,9 @@ const products:ProductCardProps[] = [
       "rating": 4,
       "description": "A timeless and elegant watch for any occasion.",
       "imgUrl": "/watches/watch1.jpg",
-      "type": "watch"
+      "type": "watches",
+      "quantity": 0,
+      
     },
     {
       "id": 2,
@@ -17,7 +19,8 @@ const products:ProductCardProps[] = [
       "rating": 3,
       "description": "Perfect for the active lifestyle, with a sporty design.",
       "imgUrl": "/watches/watch2.jpg",
-      "type": "watch"
+      "type": "watches",
+      "quantity": 0,
     },
     {
       "id": 3,
@@ -26,7 +29,8 @@ const products:ProductCardProps[] = [
       "rating": 5,
       "description": "Experience luxury with this high-end timepiece.",
       "imgUrl": "/watches/watch3.jpg",
-      "type": "watch"
+      "type": "watches",
+      "quantity": 0,
     },
     {
       "id": 4,
@@ -35,7 +39,8 @@ const products:ProductCardProps[] = [
       "rating": 4,
       "description": "Stay stylish with these trendy glasses.",
       "imgUrl": "/glasses/glass1.jpg",
-      "type": "glasses"
+      "type": "glasses",
+      "quantity": 0,
     },
     {
       "id": 5,
@@ -44,7 +49,8 @@ const products:ProductCardProps[] = [
       "rating": 3,
       "description": "A classic choice for a timeless look.",
       "imgUrl": "/glasses/glass2.jpg",
-      "type": "glasses"
+      "type": "glasses",
+      "quantity": 0,
     },
     {
       "id": 6,
@@ -53,7 +59,8 @@ const products:ProductCardProps[] = [
       "rating": 5,
       "description": "Experience the future with these smart glasses.",
       "imgUrl": "/glasses/glass3.jpg",
-      "type": "glasses"
+      "type": "glasses",
+      "quantity": 0,
     },
     {
       "id": 7,
@@ -62,7 +69,8 @@ const products:ProductCardProps[] = [
       "rating": 4,
       "description": "Enjoy music wirelessly with these sleek earbuds.",
       "imgUrl": "/earphones/earphone1.jpg",
-      "type": "earphones"
+      "type": "earphones",
+      "quantity": 0,
     },
     {
       "id": 8,
@@ -71,7 +79,8 @@ const products:ProductCardProps[] = [
       "rating": 5,
       "description": "Immerse yourself in sound with these noise-canceling earphones.",
       "imgUrl": "/earphones/earphone2.jpg",
-      "type": "earphones"
+      "type": "earphones",
+      "quantity": 0,
     },
     {
       "id": 9,
@@ -80,7 +89,8 @@ const products:ProductCardProps[] = [
       "rating": 4,
       "description": "Perfect for music enthusiasts and DJs alike.",
       "imgUrl": "/earphones/earphone3.jpg",
-      "type": "earphones"
+      "type": "earphones",
+      "quantity": 0,
     },
     {
       "id": 10,
@@ -89,7 +99,8 @@ const products:ProductCardProps[] = [
       "rating": 3,
       "description": "A versatile backpack for everyday use.",
       "imgUrl": "/backpacks/backpack1.jpg",
-      "type": "backpack"
+      "type": "backpack",
+      "quantity": 0,
     },
     {
       "id": 11,
@@ -98,7 +109,8 @@ const products:ProductCardProps[] = [
       "rating": 4,
       "description": "Explore the world with this spacious and durable backpack.",
       "imgUrl": "/backpacks/backpack2.jpg",
-      "type": "backpack"
+      "type": "backpack",
+      "quantity": 0,
     },
     {
       "id": 12,
@@ -107,7 +119,8 @@ const products:ProductCardProps[] = [
       "rating": 4,
       "description": "Keep your laptop safe and secure with this specialized backpack.",
       "imgUrl": "/backpacks/backpack3.jpg",
-      "type": "backpack"
+      "type": "backpack",
+      "quantity": 0,
     }
   ]
   export default products

@@ -14,10 +14,10 @@ export default function Login() {
           <FaOpencart size={120} className="text-white" />
           <div className=" mt-8 space-y-3">
             <h3 className="text-white text-3xl font-bold">
-              Comece a comprar facilmente
+              Start shopping easily
             </h3>
             <p className="text-gray-300">
-              Entre na sua conta e começe a comprar agora mesmo
+              Log in to your account and start shopping now
             </p>
             <div className="flex items-center -space-x-2 overflow-hidden">
               <img
@@ -41,7 +41,7 @@ export default function Login() {
                 className="w-10 h-10 rounded-full border-2 border-white"  alt="user5"
               />
               <p className="text-sm text-gray-400 font-medium translate-x-5">
-              Junte-se a 5.000+ ususários
+                Join 5,000+ users
               </p>
             </div>
           </div>
@@ -68,31 +68,31 @@ export default function Login() {
                 Login
               </h3>
               <p className="">
-                Não possui uma conta?{" "}
+                Don't have an account?{" "}
                 <Link
                   href="/register"
                   className="font-medium text-indigo-600 hover:text-indigo-500"
                 >
-                  Registre-se
+                  Register
                 </Link>
               </p>
             </div>
           </div>
           <div className="grid grid-cols-3 gap-x-3">
-            <button className="flex items-center justify-center py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
+            <Link href="/" className="flex items-center justify-center py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
               <FcGoogle size={24} />
-            </button>
-            <button className="flex items-center justify-center py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
+            </Link>
+            <Link href="/" className="flex items-center justify-center py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
               <FaTwitter size={24} className="text-blue-500" />
-            </button>
-            <button className="flex items-center justify-center py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
+            </Link>
+            <Link href="/" className="flex items-center justify-center py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
               <FaGithub size={24} className="text-black" />
-            </button>
+            </Link>
           </div>
           <div className="relative">
             <span className="block w-full h-px bg-gray-300"></span>
             <p className="inline-block w-fit text-sm bg-white px-2 absolute -top-2 inset-x-0 mx-auto">
-              Ou continue com
+              Or continue with
             </p>
           </div>
           <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
@@ -105,7 +105,7 @@ export default function Login() {
               />
             </div>
             <div>
-              <label className="font-medium">Senha</label>
+              <label className="font-medium">Password</label>
               <input
                 type="password"
                 required

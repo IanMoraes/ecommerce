@@ -14,13 +14,13 @@ export default function Register() {
           <FaOpencart size={120} className="text-white" />
           <div className=" mt-8 space-y-3">
             <h3 className="text-white text-3xl font-bold">
-              Comece a comprar facilmente
+              Start shopping easily
             </h3>
             <p className="text-gray-300">
-              Crie uma conta e garanta acesso a diversos produtos tech
+              Create an account and get access to various tech products
             </p>
             <div className="flex items-center -space-x-2 overflow-hidden">
-            <img
+              <img
                 src="https://randomuser.me/api/portraits/women/79.jpg"
                 className="w-10 h-10 rounded-full border-2 border-white" alt="user1"
               />
@@ -41,7 +41,7 @@ export default function Register() {
                 className="w-10 h-10 rounded-full border-2 border-white"  alt="user5"
               />
               <p className="text-sm text-gray-400 font-medium translate-x-5">
-                Junte-se a 5.000+ ususários
+                Join 5,000+ users
               </p>
             </div>
           </div>
@@ -65,10 +65,10 @@ export default function Register() {
             />
             <div className="mt-5 space-y-2">
               <h3 className="text-gray-800 text-2xl font-bold sm:text-3xl">
-                Registre-se
+                Register
               </h3>
               <p className="">
-                Já possui uma conta?{" "}
+                Already have an account?{" "}
                 <Link
                   href="/login"
                   className="font-medium text-indigo-600 hover:text-indigo-500"
@@ -79,25 +79,25 @@ export default function Register() {
             </div>
           </div>
           <div className="grid grid-cols-3 gap-x-3">
-            <button className="flex items-center justify-center py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
+            <Link href="/" className="flex items-center justify-center py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
               <FcGoogle size={24} />
-            </button>
-            <button className="flex items-center justify-center py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
+            </Link>
+            <Link href="/" className="flex items-center justify-center py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
               <FaTwitter size={24} className="text-blue-500" />
-            </button>
-            <button className="flex items-center justify-center py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
+            </Link>
+            <Link href="/" className="flex items-center justify-center py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
               <FaGithub size={24} className="text-black" />
-            </button>
+            </Link>
           </div>
           <div className="relative">
             <span className="block w-full h-px bg-gray-300"></span>
             <p className="inline-block w-fit text-sm bg-white px-2 absolute -top-2 inset-x-0 mx-auto">
-              Ou continue com
+              Or continue with
             </p>
           </div>
           <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
             <div>
-              <label className="font-medium">Nome</label>
+              <label className="font-medium">Name</label>
               <input
                 type="text"
                 required
@@ -113,7 +113,7 @@ export default function Register() {
               />
             </div>
             <div>
-              <label className="font-medium">Senha</label>
+              <label className="font-medium">Password</label>
               <input
                 type="password"
                 required
@@ -123,7 +123,7 @@ export default function Register() {
 
             <Link href="/" >
               <button className=" mt-4 w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150">
-                Criar uma conta
+                Create an account
               </button>
             </Link>
           </form>

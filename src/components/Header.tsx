@@ -3,34 +3,24 @@ import { useState, useRef, useEffect } from "react";
 import ProfileDropDown from "./ProfileDropdown";
 import { FaOpencart } from "react-icons/fa6";
 import Link from "next/link";
+import useFilterStore from "@/stores/FilterStore";
+import Cart from "./Cart";
 const Header = () => {
+  const { filterString, setFilterString } = useFilterStore();
   const [menuState, setMenuState] = useState(false);
 
-  const navigation = [
-    { title: "Customers", path: "javascript:void(0)" },
-    { title: "Careers", path: "javascript:void(0)" },
-    { title: "Guides", path: "javascript:void(0)" },
-    { title: "Partners", path: "javascript:void(0)" },
-  ];
   return (
     <nav className="bg-white border-b  w-screen ">
       <div className="flex items-center space-x-8 py-3 px-4 max-w-screen-xl mx-auto md:px-8">
-        <div className="flex-none lg:flex-initial">
+        <Link href={'/'} className="flex-none lg:flex-initial">
           <FaOpencart size={50} className="text-black" />
-        </div>
+        </Link>
         <div className="flex-1 flex items-center justify-between">
           <div
             className={`bg-white absolute z-20 w-full top-16 left-0 p-4 border-b lg:static lg:block lg:border-none ${
               menuState ? "" : "hidden"
             }`}
           >
-            <ul className="mt-12 space-y-5 lg:flex lg:space-x-6 lg:space-y-0 lg:mt-0">
-              {navigation.map((item, idx) => (
-                <li key={idx} className="text-gray-600 hover:text-gray-900">
-                  <a href={item.path}>{item.title}</a>
-                </li>
-              ))}
-            </ul>
             <ProfileDropDown className="mt-5 pt-5 border-t lg:hidden" />
           </div>
           <div className="flex-1 flex items-center justify-end space-x-2 sm:space-x-6">
@@ -53,8 +43,13 @@ const Header = () => {
                 className="w-full outline-none appearance-none placeholder-gray-500 text-gray-500 sm:w-auto"
                 type="text"
                 placeholder="Search"
+                onChange={(e) => {
+                  setFilterString(e.target.value);
+                }}
+                value={filterString}
               />
             </form>
+            <Cart/>
             <Link href="/login">
               <ProfileDropDown className="hidden lg:block" />
             </Link>
@@ -101,4 +96,4 @@ const Header = () => {
     </nav>
   );
 };
-export default Header
+export default Header;
