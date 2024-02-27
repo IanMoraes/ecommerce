@@ -67,8 +67,8 @@ export default function Login() {
               <h3 className="text-gray-800 text-2xl font-bold sm:text-3xl">
                 Login
               </h3>
-              <p className="">
-                Don't have an account?{" "}
+              <p >
+                Don't have an account?
                 <Link
                   href="/register"
                   className="font-medium text-indigo-600 hover:text-indigo-500"

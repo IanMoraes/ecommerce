@@ -1,4 +1,4 @@
-This is a on-going project of a ecommerce
+This is project of a ecommerce
 
 ## Getting Started
 
