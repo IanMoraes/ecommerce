@@ -3,7 +3,7 @@ import CartCard from "@/components/CartCard";
 import useCartStore from "@/stores/CartStore";
 import React from "react";
 
-export default function page() {
+export default function Page() {
   const { cartItems, setCartItems } = useCartStore();
   const calculateSubtotal = () => {
     return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
